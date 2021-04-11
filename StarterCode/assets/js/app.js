@@ -73,7 +73,7 @@ d3.csv("assets/data/data.csv").then(function(data_csv) {
       .attr("class", "d3-tip")
       .offset([80, -90])
       .html(function(d) {
-        return (`State: ${d.state}<br>Poverty: ${d.poverty}<br>Lack Healthcare: ${d.healthcare}`);
+        return (`State: ${d.state}<br>Poverty: ${d.poverty}%<br>Lack Healthcare: ${d.healthcare}%`);
       });
 
     // Step 7: Adding the abbreviation of the state
